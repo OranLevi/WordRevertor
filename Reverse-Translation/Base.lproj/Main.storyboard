@@ -1,24 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reverse_Translation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ty2-EL-CwC">
+                                <rect key="frame" x="16" y="71" width="358" height="32"/>
+                                <segments>
+                                    <segment title="עברית לאנגלית"/>
+                                    <segment title="אנגלית לעברית"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="eSW-Zr-aWe"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="77F-zg-jjm">
+                                <rect key="frame" x="16" y="175.33333333333337" width="358" height="178"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="178" id="9RD-2P-qlR"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הקלד את הטקסט ההפוך:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXM-ev-7Ud">
+                                <rect key="frame" x="88.666666666666686" y="131" width="213" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תוצאה:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cX-ua-HPe">
+                                <rect key="frame" x="16" y="369.33333333333331" width="358" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fWE-Eb-JCD">
+                                <rect key="frame" x="16" y="403.66666666666669" width="358" height="71.333333333333314"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="nQJ-wR-INe">
+                                <rect key="frame" x="16" y="502" width="358" height="233"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-9f-xtT">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FLX-jv-XsV"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="הפוך תרגום"/>
+                                        <connections>
+                                            <action selector="reversStringButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lW9-m7-IsW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfq-HN-lr5">
+                                        <rect key="frame" x="0.0" y="61" width="358" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="סדר מהסוף להתחלה"/>
+                                        <connections>
+                                            <action selector="sortString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbO-g6-4is"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wty-Kj-lTe">
+                                        <rect key="frame" x="0.0" y="122" width="358" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Lower Case"/>
+                                        <connections>
+                                            <action selector="lowercaseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJ5-VI-bjD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ul-u5-AWU">
+                                        <rect key="frame" x="0.0" y="183" width="358" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="העתק"/>
+                                        <connections>
+                                            <action selector="copyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ny-mc-VjO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="77F-zg-jjm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1Tf-i9-LDp"/>
+                            <constraint firstItem="fWE-Eb-JCD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6B1-TM-aBQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nQJ-wR-INe" secondAttribute="trailing" constant="16" id="FhT-ew-EIM"/>
+                            <constraint firstItem="fWE-Eb-JCD" firstAttribute="top" secondItem="6cX-ua-HPe" secondAttribute="bottom" constant="8" symbolic="YES" id="FrG-x6-0mk"/>
+                            <constraint firstItem="ty2-EL-CwC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="L95-Rr-LLR"/>
+                            <constraint firstItem="6cX-ua-HPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Nbc-4K-Mku"/>
+                            <constraint firstItem="nQJ-wR-INe" firstAttribute="top" secondItem="fWE-Eb-JCD" secondAttribute="bottom" constant="27" id="OOe-aw-OPm"/>
+                            <constraint firstItem="tXM-ev-7Ud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P2Q-XO-YKg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nQJ-wR-INe" secondAttribute="bottom" constant="75" id="P4f-yx-f5o"/>
+                            <constraint firstItem="tXM-ev-7Ud" firstAttribute="top" secondItem="ty2-EL-CwC" secondAttribute="bottom" constant="29" id="P6W-mC-9Yf"/>
+                            <constraint firstItem="6cX-ua-HPe" firstAttribute="top" secondItem="77F-zg-jjm" secondAttribute="bottom" constant="16" id="Ql6-6u-IZd"/>
+                            <constraint firstItem="ty2-EL-CwC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RQY-hz-O2E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6cX-ua-HPe" secondAttribute="trailing" constant="16" id="YXF-rE-xos"/>
+                            <constraint firstItem="nQJ-wR-INe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fWr-6S-Bd4"/>
+                            <constraint firstItem="77F-zg-jjm" firstAttribute="top" secondItem="tXM-ev-7Ud" secondAttribute="bottom" constant="18" id="gL7-bS-i1Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tXM-ev-7Ud" secondAttribute="trailing" id="hPu-2E-J6l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="77F-zg-jjm" secondAttribute="trailing" constant="16" id="ior-PW-akj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ty2-EL-CwC" secondAttribute="trailing" constant="16" id="kaC-a9-C4Q"/>
+                            <constraint firstItem="fWE-Eb-JCD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mKX-fP-yuo"/>
+                            <constraint firstItem="nQJ-wR-INe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oMw-bk-szl"/>
+                            <constraint firstItem="ty2-EL-CwC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="ofq-Zd-Uyh"/>
+                            <constraint firstItem="77F-zg-jjm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p9M-d8-AcI"/>
+                            <constraint firstItem="tXM-ev-7Ud" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="paw-LN-sFm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ty2-EL-CwC" secondAttribute="trailing" id="vec-LI-zeO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fWE-Eb-JCD" secondAttribute="trailing" constant="16" id="w26-ki-aKm"/>
+                            <constraint firstItem="ty2-EL-CwC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zwh-gl-euw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="copyButton" destination="0Ul-u5-AWU" id="ZnP-7C-dl2"/>
+                        <outlet property="lowerCaseButton" destination="Wty-Kj-lTe" id="83P-OV-0ks"/>
+                        <outlet property="originalTextView" destination="77F-zg-jjm" id="G9V-jb-X5M"/>
+                        <outlet property="resulteTextView" destination="fWE-Eb-JCD" id="B1e-OY-pyN"/>
+                        <outlet property="reverseStringButton" destination="Dec-9f-xtT" id="V54-bI-pCa"/>
+                        <outlet property="segmentedControl" destination="ty2-EL-CwC" id="OhH-VE-BOC"/>
+                        <outlet property="sortButton" destination="yfq-HN-lr5" id="kp1-Hq-2Ir"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="3.5545023696682461"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

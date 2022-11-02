@@ -298,6 +298,7 @@
 				DEVELOPMENT_TEAM = JH7VUP2CH4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Reverse-Translation/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reverse Translation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -327,6 +328,7 @@
 				DEVELOPMENT_TEAM = JH7VUP2CH4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Reverse-Translation/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Reverse Translation";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

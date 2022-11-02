@@ -27,14 +27,12 @@
                                     <action selector="segmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="eSW-Zr-aWe"/>
                                 </connections>
                             </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="77F-zg-jjm">
-                                <rect key="frame" x="16" y="175.33333333333337" width="358" height="178"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="77F-zg-jjm">
+                                <rect key="frame" x="16" y="175.33333333333334" width="358" height="145.00000000000003"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="178" id="9RD-2P-qlR"/>
+                                    <constraint firstAttribute="height" constant="145" id="9RD-2P-qlR"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="הקלד את הטקסט ההפוך:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXM-ev-7Ud">
@@ -43,25 +41,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תוצאה:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cX-ua-HPe">
-                                <rect key="frame" x="16" y="369.33333333333331" width="358" height="26.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fWE-Eb-JCD">
-                                <rect key="frame" x="16" y="403.66666666666669" width="358" height="71.333333333333314"/>
+                                <rect key="frame" x="16" y="362.66666666666669" width="358" height="167.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="nQJ-wR-INe">
-                                <rect key="frame" x="16" y="502" width="358" height="233"/>
+                                <rect key="frame" x="16" y="557" width="358" height="233"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-9f-xtT">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="50"/>
-                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="FLX-jv-XsV"/>
                                         </constraints>
@@ -74,7 +66,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfq-HN-lr5">
                                         <rect key="frame" x="0.0" y="61" width="358" height="50"/>
-                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="סדר מהסוף להתחלה"/>
@@ -84,10 +76,10 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wty-Kj-lTe">
                                         <rect key="frame" x="0.0" y="122" width="358" height="50"/>
-                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Lower Case"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="lower Case"/>
                                         <connections>
                                             <action selector="lowercaseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FJ5-VI-bjD"/>
                                         </connections>
@@ -104,6 +96,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="תוצאה:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cX-ua-HPe">
+                                <rect key="frame" x="16" y="328.33333333333331" width="358" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,9 +114,9 @@
                             <constraint firstItem="6cX-ua-HPe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Nbc-4K-Mku"/>
                             <constraint firstItem="nQJ-wR-INe" firstAttribute="top" secondItem="fWE-Eb-JCD" secondAttribute="bottom" constant="27" id="OOe-aw-OPm"/>
                             <constraint firstItem="tXM-ev-7Ud" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P2Q-XO-YKg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nQJ-wR-INe" secondAttribute="bottom" constant="75" id="P4f-yx-f5o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nQJ-wR-INe" secondAttribute="bottom" constant="20" id="P4f-yx-f5o"/>
                             <constraint firstItem="tXM-ev-7Ud" firstAttribute="top" secondItem="ty2-EL-CwC" secondAttribute="bottom" constant="29" id="P6W-mC-9Yf"/>
-                            <constraint firstItem="6cX-ua-HPe" firstAttribute="top" secondItem="77F-zg-jjm" secondAttribute="bottom" constant="16" id="Ql6-6u-IZd"/>
+                            <constraint firstItem="6cX-ua-HPe" firstAttribute="top" secondItem="77F-zg-jjm" secondAttribute="bottom" constant="8" id="Ql6-6u-IZd"/>
                             <constraint firstItem="ty2-EL-CwC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RQY-hz-O2E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6cX-ua-HPe" secondAttribute="trailing" constant="16" id="YXF-rE-xos"/>
                             <constraint firstItem="nQJ-wR-INe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fWr-6S-Bd4"/>
@@ -163,6 +161,15 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

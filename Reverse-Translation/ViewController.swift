@@ -20,13 +20,15 @@ class ViewController: UIViewController {
     var service = Service.shared
     
     var reversText = false
-    var sortButtonClicked = false
+    var sortButtonDoubleTapped = false
+    var lowerButtonDoubleTapped = false
     var selectedTranslation: [(String,String)] = hebrewToEnglish
     
     override func viewDidLoad() {
         super.viewDidLoad()
         segmentedControl.selectedSegmentIndex = 0
         setupButton()
+        self.hideKeyboardWhenTappedAround()
     }
     
     func setupButton(){
@@ -62,17 +64,28 @@ class ViewController: UIViewController {
         var resulteString = ""
         resulteString = resulteTextView.text
         resulteTextView.text = String(resulteString.reversed())
-        sortButtonClicked = !sortButtonClicked
-        sortButton.setTitle(sortButtonClicked ? "סדר מההתחלה לסוף" : "סדר מהסוף להתחלה", for: .normal)
+        sortButtonDoubleTapped = !sortButtonDoubleTapped
+        sortButton.setTitle(sortButtonDoubleTapped ? "סדר מההתחלה לסוף" : "סדר מהסוף להתחלה", for: .normal)
     }
     
 
     @IBAction func lowercaseButton(_ sender: Any) {
         var resulteString = ""
-        resulteString = resulteTextView.text.lowercased()
-        resulteTextView.text = resulteString
+      
+        if !lowerButtonDoubleTapped {
+            lowerCaseButton.setTitle("Upper case", for: .normal)
+            resulteString = resulteTextView.text.lowercased()
+            resulteTextView.text = resulteString
+            lowerButtonDoubleTapped = true
+        } else {
+            lowerCaseButton.setTitle("lower case", for: .normal)
+            resulteString = resulteTextView.text.uppercased()
+            resulteTextView.text = resulteString
+            lowerButtonDoubleTapped = false
+        }
     }
     
+
     @IBAction func copyButton(_ sender: Any) {
         let pasteboard = UIPasteboard.general
         pasteboard.string = resulteTextView.text

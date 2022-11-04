@@ -10,6 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var reverseStringButton: UIButton!
+    @IBOutlet weak var pasteButton: UIButton!
+    @IBOutlet weak var selectAllButton: UIButton!
+    @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var sortButton: UIButton!
     @IBOutlet weak var lowerCaseButton: UIButton!
     @IBOutlet weak var copyButton: UIButton!
@@ -36,6 +39,10 @@ class ViewController: UIViewController {
         sortButton.layer.cornerRadius = 10
         lowerCaseButton.layer.cornerRadius = 10
         copyButton.layer.cornerRadius = 10
+        pasteButton.layer.cornerRadius = 10
+        selectAllButton.layer.cornerRadius = 10
+        clearButton.layer.cornerRadius = 10
+
     }
     
     @IBAction func segmentedControl(_ sender: Any) {
@@ -50,6 +57,20 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func pasteButton(_ sender: Any) {
+        let pasteboard = UIPasteboard.general.string
+        originalTextView.text = pasteboard
+    }
+    
+
+    @IBAction func selectAllButton(_ sender: Any) {
+        originalTextView.selectAll(self)
+    }
+    
+    @IBAction func clearButton(_ sender: Any) {
+        originalTextView.text = nil
+    }
+
     @IBAction func reversStringButton(_ sender: Any) {
         service.str = originalTextView.text
         service.reversesWords(lang: selectedTranslation)
@@ -68,7 +89,6 @@ class ViewController: UIViewController {
         sortButton.setTitle(sortButtonDoubleTapped ? "סדר מההתחלה לסוף" : "סדר מהסוף להתחלה", for: .normal)
     }
     
-
     @IBAction func lowercaseButton(_ sender: Any) {
         var resulteString = ""
       
@@ -87,8 +107,8 @@ class ViewController: UIViewController {
     
 
     @IBAction func copyButton(_ sender: Any) {
-        let pasteboard = UIPasteboard.general
-        pasteboard.string = resulteTextView.text
+        let copyboard = UIPasteboard.general
+        copyboard.string = resulteTextView.text
         copyButton.setTitle("הועתק", for: .normal)
         copyButton.setImage(UIImage(systemName: "checkmark"), for: .normal)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

@@ -5,6 +5,8 @@
 //  Created by Oran Levi on 31/10/2022.
 //
 
+import UIKit
+
 let englishToHebrew = [
     ("AA", "שש"),
     ("A", "ש"),

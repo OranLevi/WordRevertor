@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U4O-8B-C3a">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reverse_Translation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVc" id="BYZ-38-t0r" customClass="ViewController" customModule="Reverse_Translation_iPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,6 +172,7 @@
                             <constraint firstItem="48b-Qf-V3A" firstAttribute="top" secondItem="77F-zg-jjm" secondAttribute="bottom" constant="14" id="y7G-Nk-xwd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zyE-cY-2nc"/>
                     <connections>
                         <outlet property="clearButton" destination="jLI-ME-0CL" id="1Kn-aI-45F"/>
                         <outlet property="copyButton" destination="0Ul-u5-AWU" id="ZnP-7C-dl2"/>
@@ -189,8 +190,85 @@
             </objects>
             <point key="canvasLocation" x="47.692307692307693" y="3.5545023696682461"/>
         </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="nUB-B8-IB6">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeVc" id="U4O-8B-C3a" customClass="WelcomeViewController" customModule="Reverse_Translation_iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s9I-nL-geZ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="zoo-XS-rro">
+                                <rect key="frame" x="67" y="97" width="256" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="256" id="Mdb-KB-7Ab"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="huT-em-et5">
+                                <rect key="frame" x="16" y="369" width="358" height="425"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PK0-x4-WHE">
+                                        <rect key="frame" x="7.3333333333333428" y="0.0" width="343.33333333333326" height="320"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <string key="text">ברוכים הבאים!
+
+יצא לכם טקסט הפוך או שקיבלתם  טקסט הפוך?
+
+לדוגמא כתבתם:
+
+״tvc,h" במקום ״אהבתי״ 
+בעזרת האפליקצייה תוכלו להפוך את הטקסט </string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gb-vw-9nO">
+                                        <rect key="frame" x="92.333333333333329" y="375" width="173.33333333333337" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="zw1-HH-mrS"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="systemGreenColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" image="arrow.right.circle" catalog="system" imagePlacement="trailing" title="  מעבר לאפליקצייה  " titleAlignment="trailing">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="WelcomeButton:" destination="U4O-8B-C3a" eventType="touchUpInside" id="8Zc-6T-ICT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PK0-x4-WHE" firstAttribute="leading" secondItem="huT-em-et5" secondAttribute="leading" constant="7.3333333333333428" id="TDc-OW-MQz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pky-md-977"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="huT-em-et5" firstAttribute="leading" secondItem="s9I-nL-geZ" secondAttribute="leading" constant="16" id="2GA-p1-vFX"/>
+                            <constraint firstItem="huT-em-et5" firstAttribute="centerX" secondItem="s9I-nL-geZ" secondAttribute="centerX" id="D2c-Sb-bJD"/>
+                            <constraint firstItem="zoo-XS-rro" firstAttribute="centerX" secondItem="s9I-nL-geZ" secondAttribute="centerX" id="Gqb-Fb-nEg"/>
+                            <constraint firstAttribute="trailing" secondItem="huT-em-et5" secondAttribute="trailing" constant="16" id="IdV-Pc-Ryc"/>
+                            <constraint firstItem="pky-md-977" firstAttribute="bottom" secondItem="huT-em-et5" secondAttribute="bottom" constant="16" id="Ls6-SH-9JY"/>
+                            <constraint firstItem="zoo-XS-rro" firstAttribute="top" secondItem="pky-md-977" secondAttribute="top" constant="50" id="Vj4-ob-RRu"/>
+                            <constraint firstItem="huT-em-et5" firstAttribute="top" secondItem="zoo-XS-rro" secondAttribute="bottom" constant="16" id="gCa-lJ-m1L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textLabel" destination="PK0-x4-WHE" id="Brr-wV-iwn"/>
+                        <outlet property="welcomeButton" destination="2gb-vw-9nO" id="e48-ZA-UGq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tV6-Sk-sFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-698.46153846153845" y="3.5545023696682461"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrow.right.circle" catalog="system" width="128" height="123"/>
+        <image name="logo" width="256" height="256"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

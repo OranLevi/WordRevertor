@@ -107,8 +107,8 @@ class ViewController: UIViewController {
     
 
     @IBAction func copyButton(_ sender: Any) {
-        let copyboard = UIPasteboard.general
-        copyboard.string = resulteTextView.text
+        let copyBoard = UIPasteboard.general
+        copyBoard.string = resulteTextView.text
         copyButton.setTitle("הועתק", for: .normal)
         copyButton.setImage(UIImage(systemName: "checkmark"), for: .normal)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

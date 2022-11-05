@@ -17,6 +17,8 @@ class WelcomeViewController: UIViewController {
         welcomeButton.layer.cornerRadius = 10
         textLabel.layer.masksToBounds = true
         textLabel.layer.cornerRadius = 20
+        textLabel.adjustsFontSizeToFitWidth = true
+
         if UserDefaults.standard.bool(forKey: "WelcomeScreen") == false {
             print("## it the first time app load")
         } else {

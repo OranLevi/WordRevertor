@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Reverse-Translation-Mac
+//  WordRevertor-Mac
 //
 //  Created by Oran Levi on 04/11/2022.
 //

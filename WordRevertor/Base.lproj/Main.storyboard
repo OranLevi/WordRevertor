@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainVc" id="BYZ-38-t0r" customClass="ViewController" customModule="Reverse_Translation_iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVc" id="BYZ-38-t0r" customClass="ViewController" customModule="WordRevertor_iPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="857"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +242,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="nUB-B8-IB6">
             <objects>
-                <viewController storyboardIdentifier="WelcomeVc" id="U4O-8B-C3a" customClass="WelcomeViewController" customModule="Reverse_Translation_iPhone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeVc" id="U4O-8B-C3a" customClass="WelcomeViewController" customModule="WordRevertor_iPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s9I-nL-geZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +257,7 @@
                                 <rect key="frame" x="16" y="369" width="358" height="425"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PK0-x4-WHE">
-                                        <rect key="frame" x="7.3333333333333428" y="0.0" width="343.33333333333326" height="320"/>
+                                        <rect key="frame" x="7.3333333333333428" y="0.0" width="343.33333333333326" height="315.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                                         <string key="text">ברוכים הבאים!
 
@@ -271,20 +271,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gb-vw-9nO">
-                                        <rect key="frame" x="88.333333333333329" y="375" width="181.66666666666669" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvK-jd-hvp">
+                                        <rect key="frame" x="94" y="370.33333333333337" width="170" height="54.666666666666686"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="zw1-HH-mrS"/>
+                                            <constraint firstAttribute="width" constant="170" id="f6b-jp-wj1"/>
+                                            <constraint firstAttribute="height" constant="54.670000000000002" id="vQ1-ZF-0kR"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
-                                        <color key="tintColor" systemColor="systemGreenColor"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="  מעבר לאפליקצייה  " image="arrow.right.circle.fill" catalog="system">
-                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
-                                        </state>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="מעבר לאפליקצייה">
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="18"/>
+                                        </buttonConfiguration>
                                         <connections>
-                                            <action selector="WelcomeButton:" destination="U4O-8B-C3a" eventType="touchUpInside" id="8Zc-6T-ICT"/>
+                                            <action selector="WelcomeButton:" destination="U4O-8B-C3a" eventType="touchUpInside" id="MgN-FD-QBw"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -307,7 +307,7 @@
                     </view>
                     <connections>
                         <outlet property="textLabel" destination="PK0-x4-WHE" id="Brr-wV-iwn"/>
-                        <outlet property="welcomeButton" destination="2gb-vw-9nO" id="e48-ZA-UGq"/>
+                        <outlet property="welcomeButton" destination="DvK-jd-hvp" id="nRF-Fo-rRH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tV6-Sk-sFV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -316,7 +316,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.right.circle.fill" catalog="system" width="128" height="123"/>
         <image name="logo" width="256" height="256"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

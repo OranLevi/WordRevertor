@@ -1,6 +1,6 @@
 //
 //  WelcomeViewController.swift
-//  Reverse-Translation-iPhone
+//  WordRevertor - iPhone
 //
 //  Created by Oran Levi on 04/11/2022.
 //

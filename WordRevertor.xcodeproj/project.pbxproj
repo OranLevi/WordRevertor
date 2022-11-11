@@ -20,12 +20,12 @@
 		17B407D529155BF000A83283 /* Replacements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B407D329155BE600A83283 /* Replacements.swift */; };
 		17B407D629155BF300A83283 /* Replacements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17692429291022C3007F42D2 /* Replacements.swift */; };
 		17B407D729155BF600A83283 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769242B291022EE007F42D2 /* Service.swift */; };
-		17B407D829155C0C00A83283 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B407D129155BDA00A83283 /* Service.swift */; };
+		17B407D829155C0C00A83283 /* ServiceMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B407D129155BDA00A83283 /* ServiceMac.swift */; };
 		17B407E02915668600A83283 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B407DF2915668600A83283 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1769241229101667007F42D2 /* Reverse-Translation-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reverse-Translation-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1769241229101667007F42D2 /* WordRevertor-iPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordRevertor-iPhone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1769241529101667007F42D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1769241729101667007F42D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1769241929101667007F42D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,16 +33,16 @@
 		1769241E29101667007F42D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1769242129101667007F42D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1769242329101667007F42D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17692429291022C3007F42D2 /* Replacements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Replacements.swift; path = "Reverse-Translation-Mac/Replacements.swift"; sourceTree = SOURCE_ROOT; };
-		1769242B291022EE007F42D2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = "Reverse-Translation-Mac/Service.swift"; sourceTree = SOURCE_ROOT; };
-		17B407C02915359000A83283 /* תרגום הפוך.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "תרגום הפוך.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17692429291022C3007F42D2 /* Replacements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Replacements.swift; path = WordRevertor/Replacements.swift; sourceTree = SOURCE_ROOT; };
+		1769242B291022EE007F42D2 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = WordRevertor/Service.swift; sourceTree = SOURCE_ROOT; };
+		17B407C02915359000A83283 /* WordRevertor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordRevertor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B407C22915359000A83283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B407C42915359000A83283 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17B407C62915359100A83283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17B407C92915359100A83283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		17B407CB2915359100A83283 /* Reverse_Translation_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reverse_Translation_Mac.entitlements; sourceTree = "<group>"; };
-		17B407D129155BDA00A83283 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Service.swift; path = "../Reverse-Translation/Service.swift"; sourceTree = "<group>"; };
-		17B407D329155BE600A83283 /* Replacements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Replacements.swift; path = "../Reverse-Translation/Replacements.swift"; sourceTree = "<group>"; };
+		17B407CB2915359100A83283 /* WordRevertor_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordRevertor_Mac.entitlements; sourceTree = "<group>"; };
+		17B407D129155BDA00A83283 /* ServiceMac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMac.swift; sourceTree = "<group>"; };
+		17B407D329155BE600A83283 /* Replacements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replacements.swift; sourceTree = "<group>"; };
 		17B407DF2915668600A83283 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,8 +67,8 @@
 		1769240929101667007F42D2 = {
 			isa = PBXGroup;
 			children = (
-				1769241429101667007F42D2 /* Reverse-Translation */,
-				17B407C12915359000A83283 /* Reverse-Translation-Mac */,
+				1769241429101667007F42D2 /* WordRevertor */,
+				17B407C12915359000A83283 /* WordRevertor-Mac */,
 				1769241329101667007F42D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,13 +76,13 @@
 		1769241329101667007F42D2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1769241229101667007F42D2 /* Reverse-Translation-iPhone.app */,
-				17B407C02915359000A83283 /* תרגום הפוך.app */,
+				1769241229101667007F42D2 /* WordRevertor-iPhone.app */,
+				17B407C02915359000A83283 /* WordRevertor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1769241429101667007F42D2 /* Reverse-Translation */ = {
+		1769241429101667007F42D2 /* WordRevertor */ = {
 			isa = PBXGroup;
 			children = (
 				1769241529101667007F42D2 /* AppDelegate.swift */,
@@ -96,29 +96,29 @@
 				1769242029101667007F42D2 /* LaunchScreen.storyboard */,
 				1769242329101667007F42D2 /* Info.plist */,
 			);
-			path = "Reverse-Translation";
+			path = WordRevertor;
 			sourceTree = "<group>";
 		};
-		17B407C12915359000A83283 /* Reverse-Translation-Mac */ = {
+		17B407C12915359000A83283 /* WordRevertor-Mac */ = {
 			isa = PBXGroup;
 			children = (
 				17B407C22915359000A83283 /* AppDelegate.swift */,
 				17B407D329155BE600A83283 /* Replacements.swift */,
 				17B407C42915359000A83283 /* ViewController.swift */,
-				17B407D129155BDA00A83283 /* Service.swift */,
+				17B407D129155BDA00A83283 /* ServiceMac.swift */,
 				17B407C62915359100A83283 /* Assets.xcassets */,
 				17B407C82915359100A83283 /* Main.storyboard */,
-				17B407CB2915359100A83283 /* Reverse_Translation_Mac.entitlements */,
+				17B407CB2915359100A83283 /* WordRevertor_Mac.entitlements */,
 			);
-			path = "Reverse-Translation-Mac";
+			path = "WordRevertor-Mac";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1769241129101667007F42D2 /* Reverse-Translation-iPhone */ = {
+		1769241129101667007F42D2 /* WordRevertor-iPhone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1769242629101667007F42D2 /* Build configuration list for PBXNativeTarget "Reverse-Translation-iPhone" */;
+			buildConfigurationList = 1769242629101667007F42D2 /* Build configuration list for PBXNativeTarget "WordRevertor-iPhone" */;
 			buildPhases = (
 				1769240E29101667007F42D2 /* Sources */,
 				1769240F29101667007F42D2 /* Frameworks */,
@@ -128,14 +128,14 @@
 			);
 			dependencies = (
 			);
-			name = "Reverse-Translation-iPhone";
+			name = "WordRevertor-iPhone";
 			productName = "Reverse-Translation";
-			productReference = 1769241229101667007F42D2 /* Reverse-Translation-iPhone.app */;
+			productReference = 1769241229101667007F42D2 /* WordRevertor-iPhone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		17B407BF2915359000A83283 /* תרגום הפוך */ = {
+		17B407BF2915359000A83283 /* WordRevertor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17B407CC2915359100A83283 /* Build configuration list for PBXNativeTarget "תרגום הפוך" */;
+			buildConfigurationList = 17B407CC2915359100A83283 /* Build configuration list for PBXNativeTarget "WordRevertor" */;
 			buildPhases = (
 				17B407BC2915359000A83283 /* Sources */,
 				17B407BD2915359000A83283 /* Frameworks */,
@@ -145,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = "תרגום הפוך";
+			name = WordRevertor;
 			productName = "Reverse-Translation-Mac";
-			productReference = 17B407C02915359000A83283 /* תרגום הפוך.app */;
+			productReference = 17B407C02915359000A83283 /* WordRevertor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1769240D29101667007F42D2 /* Build configuration list for PBXProject "Reverse-Translation" */;
+			buildConfigurationList = 1769240D29101667007F42D2 /* Build configuration list for PBXProject "WordRevertor" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1769241129101667007F42D2 /* Reverse-Translation-iPhone */,
-				17B407BF2915359000A83283 /* תרגום הפוך */,
+				1769241129101667007F42D2 /* WordRevertor-iPhone */,
+				17B407BF2915359000A83283 /* WordRevertor */,
 			);
 		};
 /* End PBXProject section */
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17B407C52915359000A83283 /* ViewController.swift in Sources */,
-				17B407D829155C0C00A83283 /* Service.swift in Sources */,
+				17B407D829155C0C00A83283 /* ServiceMac.swift in Sources */,
 				17B407D529155BF000A83283 /* Replacements.swift in Sources */,
 				17B407C32915359000A83283 /* AppDelegate.swift in Sources */,
 			);
@@ -387,8 +387,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JH7VUP2CH4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Reverse-Translation/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "תרגום הפוך";
+				INFOPLIST_FILE = WordRevertor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WordRevertor;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -400,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Oran.Reverse-Translation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oran.WordRevertor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -420,8 +420,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JH7VUP2CH4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Reverse-Translation/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "תרגום הפוך";
+				INFOPLIST_FILE = WordRevertor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WordRevertor;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -433,7 +433,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Oran.Reverse-Translation";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oran.WordRevertor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -450,14 +450,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = "Reverse-Translation-Mac/Reverse_Translation_Mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WordRevertor-Mac/WordRevertor_Mac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JH7VUP2CH4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "תרגום הפוך";
+				INFOPLIST_KEY_CFBundleDisplayName = WordRevertor;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -467,7 +467,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Oran.Reverse-Translation-Mac";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oran.WordRevertor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -481,14 +481,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = "Reverse-Translation-Mac/Reverse_Translation_Mac.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "WordRevertor-Mac/WordRevertor_Mac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JH7VUP2CH4;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "תרגום הפוך";
+				INFOPLIST_KEY_CFBundleDisplayName = WordRevertor;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -498,7 +498,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Oran.Reverse-Translation-Mac";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Oran.WordRevertor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -509,7 +509,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1769240D29101667007F42D2 /* Build configuration list for PBXProject "Reverse-Translation" */ = {
+		1769240D29101667007F42D2 /* Build configuration list for PBXProject "WordRevertor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1769242429101667007F42D2 /* Debug */,
@@ -518,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1769242629101667007F42D2 /* Build configuration list for PBXNativeTarget "Reverse-Translation-iPhone" */ = {
+		1769242629101667007F42D2 /* Build configuration list for PBXNativeTarget "WordRevertor-iPhone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1769242729101667007F42D2 /* Debug */,
@@ -527,7 +527,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17B407CC2915359100A83283 /* Build configuration list for PBXNativeTarget "תרגום הפוך" */ = {
+		17B407CC2915359100A83283 /* Build configuration list for PBXNativeTarget "WordRevertor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17B407CD2915359100A83283 /* Debug */,

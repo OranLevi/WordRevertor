@@ -1,6 +1,6 @@
 //
 //  Replacements.swift
-//  Reverse-Translation
+//  WordRevertor
 //
 //  Created by Oran Levi on 31/10/2022.
 //

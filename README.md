@@ -24,3 +24,5 @@ The app specially developed application for iPhone and Mac
 &nbsp;&nbsp;
 <a href="https://apps.apple.com/il/app/wordrevertor-%D7%AA%D7%A8%D7%92%D7%95%D7%9D-%D7%94%D7%A4%D7%95%D7%9A/id6444360564"><img src="./Screenshot/Download_Mac_App_Store.jpg"></a>
 </p>
+
+

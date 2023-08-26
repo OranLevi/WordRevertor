@@ -1,4 +1,9 @@
 
+## ⌛️ Note:
+<b>Please be aware that this project was created some time ago and does not reflect my current skill level. For a glimpse of my recent work and evolving abilities, I recommend exploring my more recent repositories, all of which are presented in <a href="https://oranlevi.dev" target="_blank" >my portfolio</a>.</b>
+
+---
+
 WordRevertor
 ==========
 An application for convert Hebrew and English text (Not translate) - the user has the option to convert text from a Hebrew keyboard to English keyboard and reverse.
